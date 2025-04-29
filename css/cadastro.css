@@ -1,3 +1,10 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
 body {
     background-image: url(images/blue.jpg);
     background-size: 150%;
@@ -7,12 +14,6 @@ body {
 }
 
 
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 
 .container {
     display: flex;
@@ -37,11 +38,11 @@ form {
 
 label {
     font-family: 'Arial';
-    font-size: 45px;
+    font-size: 26px;
     color: #ffffff;
 }
 
-input, button  {
+input{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     width: 100%;
     height: 60px;
@@ -49,7 +50,7 @@ input, button  {
     font-size: 25px;
     padding: 0px;
     border-radius: 0px;
-    color: #ffffff;
+    color: #FEFEFE;
 }
 
 button {
@@ -59,21 +60,25 @@ button {
 }
 
 
-.botao {
+.butao{
     display: flex;
-    flex-direction: column;
+    flex-direction:row;
     align-items: center;
-    width: 100%;
-    gap: 30px;
-    margin-top: 15px;
+    justify-content: center;
+
 }
 
-a{
-    text-decoration: none;
-    font-size: 18px;
-    color:rgb(255, 255, 255);
-    margin-top: 10px;
 
+a {
+    background-color: rgb(73, 72, 72);
+    padding: 15px 30px;
+    width: 100%;
+    height: 55px;
+    margin: 15px 30px;
+    color: #FEFEFE;
+    text-align: center; 
+    font-size: 22px;  
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 
 }
 
@@ -82,9 +87,9 @@ a{
     color: #ffffff;   
     position:fixed;
     text-align: center;
-    top: 4%;
-    right: 750px;
-    font-size: 60px;
+    top: 2%;
+    right: 630px;
+    font-size: 45px;
 float: top;
 clear: both;
   }
