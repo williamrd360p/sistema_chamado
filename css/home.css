@@ -1,3 +1,64 @@
+body {
+    background-image: url(images/azul.png);
+    background-size: 120%;
+    font-family: 'Arial', sans-serif;
+    background-color: var(--cor-secundaria);
+    color: var(--cor-texto);
+    line-height: 1.6;
+    padding: 0 20px;
+}
+
+
+#container {
+    display: flex;
+    justify-content: center;
+    position:relative;
+    text-align: center; 
+    height:550px; 
+    right: -20%;
+
+  }
+
+  .title {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #ffffff;   
+    position:fixed;
+    text-align: center;
+    top: 2%;
+    right: 630px;
+    font-size: 45px;
+float: top;
+clear: both;
+  }
+
+  .butao{
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+a {
+    background-color: rgb(73, 72, 72);
+    padding: 15px 30px;
+    width: 100%;
+    height: 55px;
+    margin: 15px 30px;
+    color: #FEFEFE;
+    text-align: center; 
+    font-size: 22px;  
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+  
+  h1 {
+
+    color: hsl(0, 81%, 46%);
+
+  }
 
 :root {
     --cor-primaria: rgba(11, 2, 136, 1);
@@ -14,13 +75,6 @@
     box-sizing: border-box;
 }
 
-body {
-    font-family: 'Arial', sans-serif;
-    background-color: var(--cor-secundaria);
-    color: var(--cor-texto);
-    line-height: 1.6;
-    padding: 0 20px;
-}
 nav {
     background-color: var(--cor-primaria);
     padding: 15px 0;
