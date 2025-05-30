@@ -1,24 +1,20 @@
-<?php 
-include 'conexao.php~';
+<?php
+include 'conexao.php';
 
-$insert = "INSERT INTO tb_user VALUES (null, 'Jose', 'ze@gmail.com', 'Secretaria', '123456')";
+//trazer os dados do formulario
 
-$query = $conexao->query ($insert);
+$nome = $_POST ['nome'];
+$email = $_POST ['email'];
+$Setor = $_POST ['setor'];
+$Senha = $_POST ['senha'];
 
-if ($conexao->query($insert)) {
-    echo "<script>alert('Usuário Cadastrado com Sucesso!) location.href = '../cadastro.html'</script>";
-}
-
-
-
+$sql = "INSERT INTO `tb_user` VALUES (NULL, '$nome', '$email', '$Setor', '$Senha');";
 
 
+if ($conn->query($sql) === TRUE) {
+  echo "<script>alert('Usuario cadastrado com sucesso!');history.back();</script)";
+} 
 
 
-
-
-
-
-
-
+$conn->close();
 ?>

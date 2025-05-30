@@ -3,15 +3,14 @@
 $servidor = "localhost";
 $usuario = "root";
 $senha = "root";
-$bancodados = "bd_sistema_chamado";
+$database = "db_sistema_chamado";
 
 //função de conexão como  banco de dados
-$conexao = new mysqli($servidor, $usuario, $senha, $bancodados);
+$conn = new mysqli($servidor, $usuario, $senha, $database);
 
-if ($conexao->connect_error) {
-die("error:".$conexao->connect_error); 
+//checar conexao
+if ($conn->connect_error) {
+die("Connection failed: " .$conn->connect_error);                                                                                                                                                   
 } 
-
-
 
 ?>
