@@ -3,7 +3,7 @@
 $servidor = "localhost";
 $usuario = "root";
 $senha = "root";
-$database = "db_sistema_chamado";
+$database = "bd_chamado_database";
 
 //função de conexão como  banco de dados
 $conn = new mysqli($servidor, $usuario, $senha, $database);
