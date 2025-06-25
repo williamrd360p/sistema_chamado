@@ -43,7 +43,7 @@
                 $select = "SELECT * FROM tb_user";
 
                 // FUNÇÃO QUERY EXECUTA O SELECT DENTRO DO BANCO
-                $query = $conn->query($select);
+                $query = $conexao->query($select);
 
                 // ARMAZENA A 1ª LINHA DO BANCO DE DADOS DENTRO DA VARIÁVEL RESULTADO
                 while ($resultado = $query->fetch_assoc()){
@@ -54,9 +54,8 @@
                          <td> <?php echo $resultado ['nm_user']?> </td>
                          <td> <?php echo $resultado ['email']?> </td>
                          <td> <?php echo $resultado ['setor']?> </td> 
-                         <td> <i class="fa-solid fa-trash"></i> </td>
-                         <td> <i class="fa-solid fa-user-pen"></i> </td>
-      
+                        <td>  <a href="delete_user.php?codigo=<?php echo $resultado ['id_user']?>"><i class="fa-solid fa-trash"></i> </a> </td>
+                         <td> <a href="update_user.php?codigo=<?php echo $resultado ['id_user']?>"><i class="fa-solid fa-user-pen"></i> </td>
                 </tr>
 
         <?php  };?>

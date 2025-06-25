@@ -6,11 +6,11 @@ $senha = "root";
 $database = "bd_chamado_database";
 
 //função de conexão como  banco de dados
-$conn = new mysqli($servidor, $usuario, $senha, $database);
+$conexao = new mysqli($servidor, $usuario, $senha, $database);
 
 //checar conexao
-if ($conn->connect_error) {
-die("Connection failed: " .$conn->connect_error);                                                                                                                                                   
+if ($conexao->connect_error) {
+die("Connection failed: " .$conexao->connect_error);                                                                                                                                                   
 } 
 
 ?>
