@@ -14,7 +14,7 @@ body {
 
 .navbar {
     display: flex;
-    justify-content: space-between;
+    justify-content:baseline;
     
     
 
@@ -29,8 +29,9 @@ body {
     justify-content: center;
     position:relative;
     text-align: center; 
-    height:650px; 
+    height:450px; 
     right: 15%;
+    
 
   }
 
@@ -40,7 +41,7 @@ body {
     position:fixed;
     text-align: center;
     top: 27%;
-    right: 780px;
+    right: 580px;
     font-size: 75px;
 float: top;
 clear: both;
@@ -54,6 +55,7 @@ clear: both;
     flex-direction:row;
     align-items: center;
     justify-content: center;
+    
 
 }
 
@@ -66,7 +68,7 @@ a {
     margin: 15px 30px;  
     color: #FEFEFE;
     text-align: center; 
-    font-size: 42px;  
+    font-size: 35px;  
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     border-radius: 99999999999px;
 }
